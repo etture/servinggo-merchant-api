@@ -25,5 +25,5 @@ services:
       RDS_PASSWORD: "nilotkud0279"
       RDS_DATABASE: "servinggo"
 
-      ELASTICACHE_URL: "redis://jinoolee-aws-rds.c5uvkznthg94.ap-northeast-2.rds.amazonaws.com:6379"
+      ELASTICACHE_URL: "redis://servinggo-auth-cache.4lhvlv.0001.apn2.cache.amazonaws.com:6379"
       NODE_ENV: "production"
