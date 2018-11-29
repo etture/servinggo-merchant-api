@@ -1,9 +1,7 @@
 FROM node:8-alpine
 
 # Create app directory
-WORKDIR /usr/app
-
-ENV NODE_ENV="production"
+WORKDIR /usr/src/app
 
 # Install the app dependencies
 COPY package.json ./
@@ -13,27 +11,6 @@ RUN npm install
 # Bundle app source
 COPY . ./
 
-ENV QR_AES_ENCRYPTION_KEY='m7FE3kp01abm866Tr9qaAp812Vx01enP'
-
-ENV MERCHANT_JWT_ACCESS_TOKEN_SECRET="cAp81hb736nnbwI01llB23sfSbU328B1920lmnzX44bAwerlp4b7m1WEv9kUs34z"
-ENV MERCHANT_JWT_ACCESS_TOKEN_LIFE=1800000
-ENV MERCHANT_JWT_REFRESH_TOKEN_SECRET="61MlHj2i3001bvger12ui0sa8227f754huytBHS93UIvFxXa12edr03Iw47zF8o3"
-ENV MERCHANT_JWT_REFRESH_TOKEN_LIFE=1209600000
-
-ENV CUSTOMER_JWT_ACCESS_TOKEN_SECRET="fn81A27JMln10b4BHJ72bajk139m5m4bBAq9C7uyhi3zsD442mojpi62B7tEa2Qx"
-ENV CUSTOMER_JWT_ACCESS_TOKEN_LIFE=3600000
-ENV CUSTOMER_JWT_REFRESH_TOKEN_SECRET="61MlHj2i3001bvger12ui0sa8227f754huytBHS93UIvFxXa12edr03Iw47zF8o3"
-ENV CUSTOMER_JWT_REFRESH_TOKEN_LIFE=1209600000
-
-ENV RDS_HOST="jinoolee-aws-rds.c5uvkznthg94.ap-northeast-2.rds.amazonaws.com"
-ENV RDS_USER="etture"
-ENV RDS_PASSWORD="nilotkud0279"
-ENV RDS_DATABASE="servinggo"
-
-ENV ELASTICACHE_URL="redis://jinoolee-aws-rds.c5uvkznthg94.ap-northeast-2.rds.amazonaws.com:6379"
-
-ENV PORT=3012
-
 EXPOSE 3012
 
-CMD ["npm", "exec"]
+CMD ["npm", "start"]
