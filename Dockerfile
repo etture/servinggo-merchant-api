@@ -13,4 +13,4 @@ COPY . ./
 
 EXPOSE 3012
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
