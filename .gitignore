@@ -1,0 +1,8 @@
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+.env
+/public/images/qr/*.png
+/src/local
+/build
