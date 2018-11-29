@@ -28,6 +28,10 @@ app.get('/', (req, res) => {
     res.send('ServingGo merchant server deployed!');
 });
 
+app.get('/test', (req, res) => {
+    res.send('testing page');
+});
+
 app.listen(PORT, () => {
     console.log(`server started on ${PORT}`);
 });
