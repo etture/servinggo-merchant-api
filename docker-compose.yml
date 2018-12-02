@@ -26,4 +26,7 @@ services:
       RDS_DATABASE: "servinggo"
 
       ELASTICACHE_URL: "redis://servinggo-auth-cache.4lhvlv.0001.apn2.cache.amazonaws.com:6379"
+
+      SERVINGGO_REMOTE_API: "servinggo.app"
+
       NODE_ENV: "production"

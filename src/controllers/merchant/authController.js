@@ -28,7 +28,7 @@ const getTokenAtSignIn = (merchantId) => {
 
     // Redis in-memory store
     redis.set(refreshTokenUuid.uuid, accessTokenUuid.token);
-    console.log("accessToken:", accessTokenUuid.token);
+    console.log("redis stored, accessToken:", accessTokenUuid.token);
 
     return {
         accessToken: accessTokenUuid.token,
