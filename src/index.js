@@ -25,7 +25,9 @@ app.use('/api', routerApi);
 
 // Server connectivity test page
 app.get('/', (req, res) => {
-    res.send('ServingGo merchant server deployed!');
+    res.send(
+        '<h1>ServingGo merchant server deployed!</h1>'
+    );
 });
 
 app.get('/test', (req, res) => {
