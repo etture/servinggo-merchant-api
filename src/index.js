@@ -5,9 +5,19 @@ const cors = require('cors');
 const passport = require('passport');
 const app = express();
 const dotenv = require('dotenv').config();
+const http = require('http');
+const https = require('https');
+const fs = require('fs');
+
+const options = {
+    ca: fs.readFileSync('../ssl/servinggo_app.ca-bundle'),
+    key: fs.readFileSync('../ssl/servinggo_app.p7b'),
+    cert: fs.readFileSync('../ss/servinggo_app.crt')
+};
 
 // Port
-const PORT = process.env.PORT || 3012;
+const HTTP_PORT = process.env.HTTP_PORT || 3080;
+const HTTPS_PORT = process.env.HTTPS_PORT || 3443;
 
 // Routes
 const routerApi = require('./categories/index');
@@ -34,6 +44,14 @@ app.get('/test', (req, res) => {
     res.send('testing page');
 });
 
-app.listen(PORT, () => {
-    console.log(`server started on ${PORT}`);
+// app.listen(PORT, () => {
+//     console.log(`server started on ${PORT}`);
+// });
+
+http.createServer(app).listen(HTTP_PORT, () => {
+    console.log(`http server started on ${HTTP_PORT}`);
+});
+
+https.createServer(options, app).listen(HTTPS_PORT, () => {
+    console.log(`https server started on ${HTTPS_PORT}`);
 });

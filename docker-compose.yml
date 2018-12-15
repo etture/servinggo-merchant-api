@@ -3,13 +3,14 @@ services:
   web:
     build: .
     ports:
-    - "80:3012"
-    - "443:3012"
+    - "80:3080"
+    - "443:3443"
     volumes:
     - .:/usr/src/app
     - /usr/src/app/node_modules/
     environment:
-      PORT: 3012
+      HTTP_PORT: 3080
+      HTTPS_PORT: 3443
       QR_AES_ENCRYPTION_KEY: 'm7FE3kp01abm866Tr9qaAp812Vx01enP'
       MERCHANT_JWT_ACCESS_TOKEN_SECRET: "cAp81hb736nnbwI01llB23sfSbU328B1920lmnzX44bAwerlp4b7m1WEv9kUs34z"
       MERCHANT_JWT_ACCESS_TOKEN_LIFE: 1800000
