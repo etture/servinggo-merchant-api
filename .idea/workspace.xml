@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6c0b7e1-0f45-405c-8fef-19a8a702a6f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/servinggo_app.ca-bundle" beforeDir="false" afterPath="$PROJECT_DIR$/src/ssl/servinggo_app.ca-bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/servinggo_app.crt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ssl/servinggo_app.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/servinggo_app.p7b" beforeDir="false" afterPath="$PROJECT_DIR$/src/ssl/servinggo_app.p7b" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -199,7 +196,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="6" />
-          <entry key="EJS" value="1" />
+          <entry key="EJS" value="2" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="20" />
           <entry key="PLAIN_TEXT" value="9" />
@@ -219,7 +216,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -229,9 +226,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state relative-caret-position="252">
               <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
@@ -406,7 +412,7 @@
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
-    <option name="height" value="1044" />
+    <option name="height" value="1104" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -441,7 +447,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544848197633" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544848524853" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -455,17 +461,17 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\servinggo-merchant-api" />
+      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\servinggo-merchant-api\src" />
+      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\utils" />
+      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\categories\merchant\routes" />
+      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\categories\customer\routes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\servinggo-merchant-api" />
       <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\servinggo-merchant-api\src" />
       <recent name="C:\Users\ettur\Desktop\codePractice\ServingGo_node_api" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\utils" />
-      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\categories\merchant\routes" />
-      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\categories\customer\routes" />
-      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src\controllers\merchant" />
-      <recent name="C:\Users\ettur\Documents\DevProjects\ServingGo\Development\ServingGo_node_api\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -543,12 +549,12 @@
       <workItem from="1543837365036" duration="74000" />
       <workItem from="1544254624506" duration="2109000" />
       <workItem from="1544278645030" duration="598000" />
-      <workItem from="1544845080911" duration="2349000" />
+      <workItem from="1544845080911" duration="2655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241782000" />
+    <option name="totallyTimeSpent" value="242088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,6 +567,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26477733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -769,13 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -842,14 +842,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ssl/servinggo_app.ca-bundle">
+    <entry file="file://$PROJECT_DIR$/ssl/servinggo_app.ca-bundle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.dockerignore">
@@ -877,6 +870,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
