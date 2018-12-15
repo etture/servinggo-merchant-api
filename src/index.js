@@ -12,7 +12,7 @@ const fs = require('fs');
 const options = {
     ca: fs.readFileSync(__dirname + '/../ssl/servinggo_app.ca-bundle'),
     key: fs.readFileSync(__dirname + '/../ssl/servinggo_app.p7b'),
-    cert: fs.readFileSync(__dirname + '/../ss/servinggo_app.crt')
+    cert: fs.readFileSync(__dirname + '/../ssl/servinggo_app.crt')
 };
 
 // Port
