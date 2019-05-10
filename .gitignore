@@ -6,3 +6,5 @@ npm-debug.log
 /public/images/qr/*.png
 /src/local
 /build
+Dockerfile
+docker-compose.yml
